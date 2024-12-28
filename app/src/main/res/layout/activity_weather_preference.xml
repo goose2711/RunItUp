@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherPreferenceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weatherPreferenceTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:fontFamily="@font/foundersgrotesk_bold"
+                android:paddingBottom="30dp"
+                android:text="@string/weather_label"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/exitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:contentDescription="x icon"
+                android:src="@drawable/x_icon" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="40dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/foundersgrotesk_regular"
+                android:text="@string/weather_description"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/weatherPreferenceRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/hotButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/foundersgrotesk_regular"
+                    android:text="@string/hot_label"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/mildButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/foundersgrotesk_regular"
+                    android:text="@string/mild_label"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/coldButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/foundersgrotesk_regular"
+                    android:text="@string/cold_label"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/noPrefButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/foundersgrotesk_regular"
+                    android:text="@string/no_preference_label"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/pink"
+                android:fontFamily="@font/foundersgrotesk_bold"
+                android:text="@string/save_label"
+                android:textSize="16sp"
+                app:cornerRadius="50dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

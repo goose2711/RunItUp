@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">RunItUp</string>
+
+    <string name="existing_user_login_message">WELCOME TO</string>
+    <string name="new_user_login_message">WELCOME TO</string>
+
+    <string name="username_label">USERNAME</string>
+    <string name="password_label">PASSWORD</string>
+
+    <string name="new_username_hint">CREATE USERNAME</string>
+    <string name="new_password_hint">CREATE PASSWORD</string>
+
+    <string name="login_label">LOG IN</string>
+    <string name="create_account_label">CREATE ACCOUNT</string>
+
+    <string name="user_data_input_label">User Data</string>
+    <string name="height_input_label">HEIGHT</string>
+    <string name="weight_input_label">WEIGHT</string>
+    <string name="age_input_label">AGE</string>
+
+    <string name="activity_goal_label">Weekly Activity Goal</string>
+    <string name="activity_goal_description">Set an activity goal to track each week.</string>
+    <string name="activity_goal_unit_label">KM</string>
+    <string name="activity_goal_example">GOAL AMOUNT</string>
+
+    <string name="input_data_copy">You can change this at any time in preferences</string>
+
+    <string name="calorie_count_label">Calorie Calculator</string>
+    <string name="calorie_count_description">Calculates calories burned based on activity time and user data.</string>
+
+    <string name="run_scheduling_label">Run Reminders</string>
+    <string name="run_scheduling_description">Get notifications reminding you of your scheduled runs and encouraging you with a note from your past self</string>
+
+    <string name="weather_label">Weather Preference</string>
+    <string name="weather_description"> RunItUp uses your weather preferences when scheduling runs with calendar based on weather preference.</string>
+    <string name="hot_label">Hot weather</string>
+    <string name="mild_label">Mild weather</string>
+    <string name="cold_label">Cold weather</string>
+    <string name="no_preference_label">No weather preference</string>
+
+    <string name="music_label">Music Connect</string>
+    <string name="music_description">Sync your favourite running playlist so they are ready when it is time to run.</string>
+
+    <string name="route_save_label">Route Saving</string>
+    <string name="route_save_description">Allow RunItUp to track your location to save your run routes and update weather information</string>
+
+    <string name="future_run_schedule_label">Run Schedule</string>
+    <string name="future_run_edit_label">Edit</string>
+
+    <string name="cm_label">CM</string>
+    <string name="kg_label">KG</string>
+    <string name="years_label">YEARS</string>
+
+    <string name="current_username_label">CURRENT USERNAME</string>
+    <string name="new_username_label">NEW USERNAME</string>
+
+    <string name="current_password_label">CURRENT PASSWORD</string>
+    <string name="new_password_label">NEW PASSWORD</string>
+
+    <string name="dashboard_label">Dashboard</string>
+    <string name="journal_label">Journal</string>
+    <string name="recovery_label">Recovery</string>
+    <string name="current_run_label">Current Run</string>
+    <string name="run_label">Run Log</string>
+    <string name="add_run_label">Add Run</string>
+    <string name="stats_label">Stats</string>
+    <string name="settings_label">Settings</string>
+    <string name="post_run_label">You did it!</string>
+
+    <string name="run_overview_label">RUN OVERVIEW</string>
+    <string name="add_journal_entry_label">ADD JOURNAL ENTRY</string>
+    <string name="schedule_next_run_label">SCHEDULE NEXT RUN</string>
+    <string name="save_and_exit_label">SAVE AND EXIT</string>
+    <string name="pace_label">average pace</string>
+
+    <string name="new_run_label">START NEW RUN</string>
+    <string name="past_run_label">INPUT PAST RUN</string>
+    <string name="future_run_label">SCHEDULE FUTURE RUN</string>
+
+    <string name="past_run_time_label">MINUTES ACTIVITY TIME</string>
+    <string name="past_run_steps_label">STEPS</string>
+    <string name="past_run_calories_label">CALORIES BURNED</string>
+    <string name="past_run_pace_label">AVERAGE PACE</string>
+    <string name="past_run_km_label">KM DISTANCE</string>
+
+    <string name="time_label">TIME: HH:MM</string>
+    <string name="distance_label">DISTANCE</string>
+    <string name="run_schedule_label">View scheduled runs</string>
+
+    <string name="week_label">THIS WEEK</string>
+    <string name="month_label">LAST 30 DAYS</string>
+    <string name="last_3_months_label">LAST 3 MONTHS</string>
+    <string name="last_6_months_label">LAST 6 MONTHS</string>
+    <string name="lifetime_label">LIFETIME APP USE</string>
+
+    <string name="journal_entry_label">Add Entry</string>
+    <string name="date_label">DD/MM/YYYY</string>
+    <string name="journal_entry_content_label">How did your run go? How do you feel? What positive aspects and traits can you highlight?</string>
+    <string name="save_label">SAVE</string>
+
+    <string name="run_progress_label">RUN PROGRESS</string>
+    <string name="time_elapsed_label">TIME ELAPSED</string>
+    <string name="run_stats_label">RUN STATS</string>
+    <string name="pause_button_label">PAUSE</string>
+    <string name="finish_button_label">FINISH</string>
+
+    <string name="settings_theme_label">Color Theme</string>
+    <string name="pink_theme_label">Pink Theme</string>
+    <string name="orange_theme_label">Orange Theme</string>
+    <string name="green_theme_label">Green Theme</string>
+    <string name="blue_theme_label">Blue Theme</string>
+
+    <string name="settings_save_label">SAVE CHANGES</string>
+
+
+    <string name="stretching_card_title">STRETCHING</string>
+    <string name="stretching_card_content">It is important to warm up and cool down before running to avoid injury, and return your muscles to their normal state. This allows you to make progress faster and make running a sustainable part of your routine.</string>
+    <string name="stretching_card_link">Learn more about stretching</string>
+
+    <string name="limits_card_title">KNOWING YOUR LIMITS</string>
+    <string name="limits_card_content">Any exercise requires you to push through discomfort, but you should not push yourself to excessive pain. Forcing your body farther than it’s ready results in injury, which slows  down your progress and impairs health. Respect yourself and your body and know your limits.</string>
+    <string name="limits_card_link">Learn more about knowing your limits</string>
+
+    <string name="nutrition_card_title">NUTRITION</string>
+    <string name="nutrition_card_content">Part of being healthy is getting good nutrition. Make sure you are eating enough vitamin-rich foods after exercising to fuel your body. When you exercise you are breaking down your muscles, and they need energy to rebuild stronger. Restricting food to obtain desired results is not sustainable and impairs health in the long term.</string>
+    <string name="nutrition_card_link">Learn more about nutrition</string>
+
+    <string name="next_run_label">NEXT RUN</string>
+    <string name="weekly_progress_label">WEEKLY GOAL PROGRESS</string>
+    <string name="stats_overview_label">THIS WEEK</string>
+
+    <string name="steps_label">steps</string>
+    <string name="km_label">km</string>
+    <string name="activity_time_label">activity time</string>
+    <string name="calories_label">calories burned</string>
+
+    <string name="stats_more_info_label">View more information</string>
+    <string name="stats_view_route_label">View route</string>
+
+    <string name="user_data_input_description">This data is used to calculate step number and calories burned using average stride length, activity time and step count.</string>
+
+    <string-array name="sex_input_array">
+        <item>FEMALE</item>
+        <item>MALE</item>
+        <item>PREFER NOT TO SAY</item>
+    </string-array>
+
+    <string name="stats_label_week">Last Week</string>
+    <string name="stats_label_month">Last Month</string>
+    <string name="stats_label_6month">Last 6 Months</string>
+    <string name="stats_label_year">Last Year</string>
+    <string name="stats_label_lifetime">Lifetime App Usage</string>
+
+    <string name="dash_no_run_label">No run scheduled</string>
+    <string name="dash_no_run_description">Tap to schedule run</string>
+
+    <string name="devMessage">"Dear user, please take a moment to read this message. Me and my Teammate spent a lot of time and effort into making and refining this application, so if you are just casually using this app or loving the experience, consider donating a $ or two in the link below or watch an ad on the platform from time to time. It helps us, Thank you for downloading, leave a review after using! :))" </string>
+
+    <string name="view_route_label">Saved Route</string>
+
+
+    <string name="next_label">NEXT</string>
+
+
+</resources>

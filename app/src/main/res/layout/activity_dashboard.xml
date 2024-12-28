@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dashWelcomeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/foundersgrotesk_bold"
+                    android:paddingBottom="30dp"
+                    android:text="@string/dashboard_label"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/hotIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="hot thermometer icon"
+                    android:src="@drawable/hot_icon" />
+
+                <ImageButton
+                    android:id="@+id/mildIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="thermometer icon"
+                    android:src="@drawable/mild_icon" />
+
+                <ImageButton
+                    android:id="@+id/coldIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="cold thermometer icon"
+                    android:src="@drawable/cold_icon" />
+
+                <ImageButton
+                    android:id="@+id/settingsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="gear icon"
+                    android:src="@drawable/settings_icon" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/runLogLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_corners"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/nextRunTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="10dp"
+                        android:text="@string/next_run_label"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nextRunDateTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="10dp"
+                            android:text="@string/dash_no_run_label"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/nextRunTimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nextRunMessageTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="@string/dash_no_run_description"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/nextRunDistanceTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:gravity="right"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_regular"
+                        android:text="@string/run_schedule_label"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_corners"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/weeklyProgressTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="10dp"
+                        android:text="@string/weekly_progress_label"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <ProgressBar
+                        android:id="@+id/activityProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/activityProgressLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_regular"
+                        android:text="0/0km"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/statsOverviewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="8dp"
+                        android:text="@string/stats_overview_label"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/stepsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/stepsLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="@string/steps_label"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/kmTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/kmLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="@string/km_label"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/timeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/activityTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="@string/activity_time_label"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/caloriesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/caloriesLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="@string/calories_label"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="?android:attr/windowBackground"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            app:itemBackground="@color/white"
+            app:itemIconSize="40dp"
+            app:itemIconTint="@color/nav_icon"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

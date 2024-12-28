@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/statDetailTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="30dp"
+                        android:text="specific stat"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/exitButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="x icon"
+                        android:src="@drawable/x_icon" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/statsOverviewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="8dp"
+                        android:text="@string/week_label"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/weekTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/weekLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="stat"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statsOverviewTitle3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="8dp"
+                        android:text="@string/month_label"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/monthTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/monthLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="stat"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statsOverviewTitle4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="8dp"
+                        android:text="@string/last_3_months_label"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lastThreeMonthsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/lastThreeMonthsLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="stat"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statsOverviewTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="8dp"
+                        android:text="@string/last_6_months_label"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lastSixMonthsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/lastSixMonthsLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="stat"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statsOverviewTitle5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/foundersgrotesk_bold"
+                        android:paddingBottom="8dp"
+                        android:text="@string/lifetime_label"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lifetimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/foundersgrotesk_bold"
+                            android:paddingBottom="8dp"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/lifetimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/foundersgrotesk_regular"
+                            android:text="stat"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="?android:attr/windowBackground"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            app:itemBackground="@color/white"
+            app:itemIconSize="40dp"
+            app:itemIconTint="@color/nav_icon"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

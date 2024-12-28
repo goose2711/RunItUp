@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/home_default"
+        android:title="Home"/>
+
+    <item android:id="@+id/nav_stats"
+        android:icon="@drawable/stats_default"
+        android:title="Stats"/>
+
+    <item android:id="@+id/nav_run"
+        android:icon="@drawable/run_default"
+        android:title="Run"/>
+
+    <item android:id="@+id/nav_journal"
+        android:icon="@drawable/journal_default"
+        android:title="Journal"/>
+
+    <item android:id="@+id/nav_recovery"
+        android:icon="@drawable/recovery_default"
+        android:title="Recovery"/>
+
+</menu>
